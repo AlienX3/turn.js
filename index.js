@@ -1201,7 +1201,7 @@ flipMethods = {
 		var data = this.data().f;
 
 		if (opts) {
-			flipMethods.setData.call(this, {opts: $.extend({}, data.opts || flipOptions, opts) });
+			flipMethods.setData.call(this, {opts: $.extend({}, data || data.opts || flipOptions, opts) });
 			return this;
 		} else
 			return data.opts;
